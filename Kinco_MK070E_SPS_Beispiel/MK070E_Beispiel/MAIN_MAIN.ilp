@@ -1,0 +1,13 @@
+(*2*)
+(* Network 0 *)
+(*Einfacher Zaehler (Remanenz in SPS-Hardware-Einstellungen konfiguriert)*)
+LD    %M0.0
+CTU   C0, %M0.2, %VW2
+__CR_EQ_1
+MOVE    C0, %VW0
+__CR_RESTORE
+ST   %M1.0
+(* Network 1 *)
+(*Einfache Schaltlogik*)
+LD    %M0.1
+ST   %Q0.0
